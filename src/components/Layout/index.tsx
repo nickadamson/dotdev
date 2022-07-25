@@ -18,8 +18,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
             <Navbar />
           </div>
         </header>
-        <div className="flex justify-center mx-auto mt-12 w-full max-w-3xl max-h-full">
-          <div className="flex flex-col items-center self-start pt-8 mr-24 space-y-4 w-12 h-max">
+        <div className="flex justify-center mx-auto mt-12 w-full max-w-4xl max-h-full">
+          <div className="flex flex-col items-center self-start pt-8 mr-16 space-y-4 w-12 h-max">
             <SocialLinks />
           </div>
           <div className="w-3/4">

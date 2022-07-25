@@ -17,22 +17,25 @@ const projects: Project[] = [
     name: "Loudverse",
     github: "https://github.com/neodaoist/loudverse/",
     link: "https://loudverse.com/",
-    stack: "Solidity, NextJS",
-    description: "2 sided marketplace for public goods",
+    stack: "Solidity, TypeScript, NextJS, TheGraph",
+    description:
+      "Loudverse is a 2 sided marketplace for funding hard to quantify public goods, like music, poetry, and theater.",
   },
   {
     name: "ourz.network",
     github: "https://github.com/ourz-network/",
     link: "https://ourz.network/",
-    stack: "Solidity, NextJS",
-    description: "split royalties for collaborators",
+    stack: "Solidity, TypeScript, NextJS, TheGraph",
+    description:
+      "ourz is a platform that enables creators, builders, and collaborators of all kind, to receive fairly split royalties for their work. Forever.",
   },
   {
     name: "messonry",
     github: "https://github.com/nickadamson/messonry/",
     link: "https://nickadamson.github.io/messonry/?path=/story/example-introduction--page",
-    stack: "React",
-    description: "npm library for react to create a messy grid",
+    stack: "npm, React",
+    description:
+      "messonry is a npm package for React. Like a masonry layout... that actually respects images' original aspect ratio.",
   },
 ];
 

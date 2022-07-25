@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FC, MouseEventHandler, ReactNode } from "react";
+import { FC, MouseEventHandler } from "react";
 
 interface LinkProps {
   name: string;

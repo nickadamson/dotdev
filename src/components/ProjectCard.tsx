@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Dispatch, FC, MouseEventHandler, SetStateAction } from "react";
+import { Dispatch, FC, SetStateAction } from "react";
 import { Project } from "../pages/projects";
 
 interface ProjectCardProps {

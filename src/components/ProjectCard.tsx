@@ -60,10 +60,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
           <p className="pb-2 italic font-light text-center">{stack}</p>
         </div>
         <div className="text-center lg:mx-auto 2xl:w-2/3">
-          <p className="md:text-xl">{description}</p>
+          <p className="text-sm lg:text-xl">{description}</p>
         </div>
         <div className="">
-          <div className="flex justify-between mx-auto w-4/5 portrait:pt-2 lg:mb-12 lg:w-2/5 md:text-lg">
+          <div className="flex justify-between mx-auto w-4/5 lg:w-2/5 md:text-lg">
             <a
               href={link}
               rel="noopener noreferrer"

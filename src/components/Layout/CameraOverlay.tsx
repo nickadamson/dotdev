@@ -43,12 +43,12 @@ const CameraOverlay = () => {
           alt="Camera Auto Exposure Slider Icon"
         />
       </div>
-      <div className="flex flex-col justify-between w-full h-full max-h-screen text-xl font-extralight tracking-wide max-w-screen xl:text-xl 2xl:text-4xl md:py-1.5 xl:py-2 2xl:py-3">
+      <div className="flex flex-col justify-between w-full h-full max-h-screen text-xl font-extralight tracking-wide max-w-screen xl:text-xl 2xl:text-4xl md:py-1 xl:py-1.5 2xl:py-2">
         <div className="flex z-10 justify-between">
           <div className="flex space-x-8 mt-88vh ml-88vw">
             {/* <img src="/flash.svg" alt="Camera Flash Icon" /> */}
             <img
-              className="m-auto 2xl:h-14 xl:h-12 md:h-8"
+              className="m-auto 2xl:h-14 xl:h-12 lg:h-10 md:h-8"
               src="/camera.svg"
               alt="Video Camera Icon"
             />

@@ -61,14 +61,14 @@ const Projects = () => {
             return index === 0 ? (
               <h2
                 key={index}
-                className={`sticky top-0 -mx-9 lg:-mb-12 outline-font ${style}`}
+                className={`sticky top-0 -mx-9 lg:-mb-12 lg:outline-font ${style}`}
               >
                 PROJECTS
               </h2>
             ) : (
               <p
                 key={index}
-                className={`sticky top-0 -mx-9 lg:-mb-12 outline-font ${style}`}
+                className={`sticky top-0 -mx-9 lg:-mb-12 lg:outline-font ${style}`}
               >
                 PROJECTS
               </p>

@@ -1,38 +1,86 @@
+import { useAnimation, m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { Dispatch, FC, SetStateAction } from "react";
-import { Project } from "../pages/projects";
+import { FC, useEffect } from "react";
+import { Project } from "./sections/Projects";
 
 interface ProjectCardProps {
   project: Project;
-  setActive: Dispatch<SetStateAction<string>>;
+  index: number;
+  // setActive?: Dispatch<SetStateAction<string>>;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
-  const { name, github, link, stack, description } = project;
+const motionVariants = (index: number) => {
+  return {
+    visible: {
+      transform: "translate(0vw)",
+      // opacity: 1,
+      transition: { duration: 1 },
+    },
+    hidden: {
+      transform: index % 2 === 1 ? "translate(-100vw)" : "translate(100vw)",
+      // opacity: 0,
+    },
+  };
+};
+
+const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
+  const { name, github, link, linkTitle, stack, description } = project;
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   return (
-    <div className="flex flex-col p-2 m-2 w-full border-2 h-max max-w-1/3">
-      <div className="flex justify-between w-full h-full">
-        <div className="flex flex-col justify-between h-full text-xl font-semibold text-left">
-          <h3 className="flex space-x-1">
-            <a href={link}>&#128279; {name}</a>
-            <a className="self-end" href={github}>
-              <div className="text-base font-normal">
-                {" - "}
-                <Image
-                  src="/github.svg"
-                  alt="Github Repo"
-                  width={16}
-                  height={16}
-                />{" "}
-                Source
-              </div>
-            </a>
-          </h3>
-          <p className="text-sm italic font-light tracking-wide">{stack}</p>
+    <div
+      // variants={motionVariants(index)}
+      // initial="visible"
+      // animate={control}
+      className={`flex ${
+        index % 2 === 1 ? "flex-row-reverse" : ""
+      } portrait:flex-col-reverse portrait:justify-around mx-auto rounded-xl border-2 border-black w-card lg:h-card portrait:h-card-mobile max-w-8xl`}
+    >
+      <div className="m-4 max-w-full max-h-full portrait:h-1/2 landscape:w-1/2">
+        <div className="relative w-full h-full">
+          <Image src={`/${name}.png`} layout="fill" objectFit="cover" />
         </div>
-        <div className="w-1/2 max-w-3/4">
-          <p className="text-right break-normal">{description}</p>
+      </div>
+      <div className="flex flex-col justify-around px-6 landscape:py-4 portrait:py-2 landscape:w-1/2 landscape:h-full">
+        <div className="">
+          <h3 className="pb-2 text-xl font-extrabold text-center md:text-4xl">
+            {name}
+          </h3>
+          <p className="pb-2 italic font-light text-center">{stack}</p>
+        </div>
+        <div className="text-center lg:mx-auto 2xl:w-2/3">
+          <p className="md:text-xl">{description}</p>
+        </div>
+        <div className="">
+          <div className="flex justify-between mx-auto w-4/5 portrait:pt-2 lg:mb-12 lg:w-2/5 md:text-lg">
+            <a
+              href={link}
+              rel="noopener noreferrer"
+              target="blank"
+              className="font-serif font-medium underline rounded-sm outline-2 hover:outline outline-offset-8"
+            >
+              {linkTitle}
+            </a>
+            <a
+              href={github}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="font-mono font-bold tracking-tighter underline rounded-sm outline-2 hover:outline outline-offset-8"
+            >
+              SOURCE
+            </a>
+          </div>
         </div>
       </div>
     </div>

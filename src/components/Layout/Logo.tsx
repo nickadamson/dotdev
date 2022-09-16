@@ -1,8 +1,9 @@
+// placeholder component in the eventual case I find time to design an actual logo
 const Logo = () => {
   return (
-    <div className="">
-      <h1 className="text-3xl font-bold tracking-wide">Nick Adamson</h1>
-    </div>
+    <h1 className="text-lg font-bold tracking-wide xl:text-2xl">
+      NICK_ADAMSON
+    </h1>
   );
 };
 

@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 import Navbar from "./Navbar";
 import NextHead from "./NextHead";
-import SocialLinks from "./SocialLinks";
+import CameraFrame from "./CameraFrame";
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,22 +10,13 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      {/* <head> */}
       <NextHead />
-      <div className="w-screen h-screen">
+      <div className="overflow-hidden w-screen h-screen -z-10">
+        <CameraFrame />
         <header>
-          <div className="flex flex-col mx-auto max-w-6xl">
-            <Navbar />
-          </div>
+          <Navbar />
         </header>
-        <div className="flex justify-center mx-auto mt-12 w-full max-w-4xl max-h-full">
-          <div className="flex flex-col items-center self-start pt-8 mr-16 space-y-4 w-12 h-max">
-            <SocialLinks />
-          </div>
-          <div className="w-3/4">
-            <main>{children}</main>
-          </div>
-        </div>
+        {children}
       </div>
     </>
   );

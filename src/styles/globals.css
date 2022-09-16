@@ -25,6 +25,11 @@
     --w: 16px; /* width of border - corner edge -> middle of edge */
   }
 
+  .html,
+  .body {
+    height: 100%;
+  }
+
   .scrollbar-hidden::-webkit-scrollbar {
     width: 0 !important;
   }

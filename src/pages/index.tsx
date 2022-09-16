@@ -1,31 +1,21 @@
 import type { NextPage } from "next";
 import Layout from "../components/Layout";
+import About from "../components/sections/About";
+import Landing from "../components/sections/Landing";
+import Projects from "../components/sections/Projects";
 
-const AboutPage: NextPage = () => {
+const LandingPage: NextPage = () => {
   return (
     <Layout>
-      <section id="about">
-        <div className="flex flex-col">
-          <h2 className="mb-2 text-xl font-semibold">About</h2>
-          <div className="space-y-2 text-lg">
-            <p>
-              Nick is a developer who particularly <i>loves</i> open-source and
-              decentralized technology.
-            </p>
-            <p>
-              Before discovering this interest in programming, it was instead in
-              photo + video production -- working as a digital tech on fashion
-              shoots.
-            </p>
-            <p>
-              That creative experience serves as a source of inspiration for the
-              projects being built now.
-            </p>
-    </div>
-        </div>
-      </section>
+      <div className="fixed top-0 right-0 left-0 w-screen h-screen">
+        <main className="flex overflow-x-hidden overflow-y-scroll z-50 flex-col mx-auto font-serif border-2 border-black my-h-safe-action scrollbar-hidden w-center-title h-center-action scroll-smooth">
+          <Landing />
+          <Projects />
+          <About />
+        </main>
+      </div>
     </Layout>
   );
 };
 
-export default AboutPage;
+export default LandingPage;

@@ -1,24 +1,12 @@
-import { useEffect } from "react";
 import CameraOverlay from "./CameraOverlay";
-import { useAnimation, m, Transition } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { m, Transition } from "framer-motion";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 // shoutout https://supercolorpalette.com/
 const colors = ["#f2c1c0", "#ea99b4", "#e273c1", "#d14ddb", "#882acf"];
 
-// fade in
-const motionVariants = {
-  visible: { opacity: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0 },
-};
-
 const CameraFrame = (): JSX.Element => {
   const { height, width } = useWindowDimensions();
-  console.log(height);
-
-  const control = useAnimation();
-  const [ref, inView] = useInView();
 
   // random colors on every load
   const initialDegrees = Math.floor(Math.random() * 360);
@@ -43,22 +31,8 @@ const CameraFrame = (): JSX.Element => {
     };
   };
 
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
   return (
-    <m.div
-      ref={ref}
-      variants={motionVariants}
-      initial="hidden"
-      animate={control}
-      className="absolute top-0 w-screen h-screen font-mono lg:h-screen text-zinc-900 no-pointer"
-    >
+    <div className="absolute top-0 w-screen h-screen font-mono lg:h-screen text-zinc-900 no-pointer">
       <CameraOverlay />
 
       {/* + */}
@@ -107,7 +81,7 @@ const CameraFrame = (): JSX.Element => {
         animate={colorsAnimate}
         transition={colorsTransitionWithDelay(2)}
       />
-    </m.div>
+    </div>
   );
 };
 

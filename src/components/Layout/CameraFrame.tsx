@@ -32,7 +32,7 @@ const CameraFrame = (): JSX.Element => {
   };
 
   return (
-    <div className="absolute top-0 w-screen h-screen font-mono lg:h-screen text-zinc-900 no-pointer">
+    <div className="overflow-y-hidden absolute top-0 w-screen h-screen font-mono lg:h-screen text-zinc-900 no-pointer">
       <CameraOverlay />
 
       {/* + */}

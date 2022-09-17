@@ -32,7 +32,7 @@ const About = () => {
     <section id="about">
       <div
         ref={ref}
-        className="flex flex-col px-2 py-24 w-full lg:flex-row h-center-action portrait:mb-8"
+        className="flex flex-col px-2 py-24 w-full lg:flex-row h-center-action portrait:mb-16"
       >
         <m.div
           variants={headerVariants}

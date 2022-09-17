@@ -35,7 +35,7 @@ const CameraOverlay = () => {
   }, []);
 
   return (
-    <div className="absolute top-0 w-full h-full -z-10 no-pointer">
+    <div className="overflow-y-hidden absolute top-0 w-full h-full -z-10 no-pointer">
       <div className="flex fixed h-screen max-w-unsafe">
         <img
           className="m-auto w-full h-auto lg:-translate-y-0.5 2xl:-translate-y-1 translate-x-1.5 xl:translate-x-4 2xl:translate-x-6"

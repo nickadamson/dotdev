@@ -8,7 +8,7 @@ const links = [
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="flex justify-between items-center w-full h-6.5vh px-88vw max-w-screen text-zinc-900 font-mono">
+    <nav className="flex justify-between overflow-y-hidden items-center w-full h-6.5vh px-88vw max-w-screen text-zinc-900 font-mono">
       <PageLink key="home" name="home" href="#home">
         <Logo />
       </PageLink>

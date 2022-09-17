@@ -25,8 +25,8 @@
     --w: 16px; /* width of border - corner edge -> middle of edge */
   }
 
-  .html,
-  .body {
+  html,
+  body {
     height: 100%;
     overflow-y: hidden;
   }

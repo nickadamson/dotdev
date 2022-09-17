@@ -57,7 +57,7 @@ const CameraFrame = (): JSX.Element => {
       variants={motionVariants}
       initial="hidden"
       animate={control}
-      className="overflow-y-hidden absolute w-screen h-screen font-mono lg:h-screen -z-20 text-zinc-900"
+      className="absolute w-screen h-screen font-mono  lg:h-screen -z-20 text-zinc-900"
     >
       <CameraOverlay />
 

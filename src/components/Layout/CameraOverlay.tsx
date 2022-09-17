@@ -35,8 +35,8 @@ const CameraOverlay = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full h-full -z-20 no-pointer">
-      <div className="flex fixed h-screen -z-10 max-w-unsafe">
+    <div className="w-full h-full -z-10 no-pointer">
+      <div className="flex fixed h-screen max-w-unsafe">
         <img
           className="m-auto w-full h-auto lg:-translate-y-0.5 2xl:-translate-y-1 translate-x-1.5 xl:translate-x-4 2xl:translate-x-6"
           src="/exposure.svg"
@@ -44,7 +44,7 @@ const CameraOverlay = () => {
         />
       </div>
       <div className="flex flex-col justify-between w-full h-full max-h-screen text-xl font-extralight tracking-wide max-w-screen xl:text-xl 2xl:text-4xl md:py-1 xl:py-1.5 2xl:py-2">
-        <div className="flex z-10 justify-between">
+        <div className="flex justify-between">
           <div className="flex space-x-8 mt-88vh ml-88vw">
             {/* <img src="/flash.svg" alt="Camera Flash Icon" /> */}
             <img
@@ -58,7 +58,7 @@ const CameraOverlay = () => {
             <span className="portrait:hidden"> - ProRes 4:2:2</span>
           </p>
         </div>
-        <div className="flex z-10 justify-between">
+        <div className="flex justify-between">
           <p className="mb-88vh ml-88vw">
             <span className="portrait:hidden">UHD23.97</span>
             {` ${CameraOverlayString}`}

@@ -11,12 +11,12 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <NextHead />
-      <div className="overflow-hidden w-screen h-screen -z-10">
-        <CameraFrame />
-        <header>
+      <div className="w-screen h-screen">
+        <header className="">
           <Navbar />
         </header>
         {children}
+        <CameraFrame />
       </div>
     </>
   );

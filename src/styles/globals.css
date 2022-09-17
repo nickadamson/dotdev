@@ -29,6 +29,10 @@
   body {
     height: 100%;
     overflow-y: hidden;
+    width: 0 !important;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overscroll-behavior-y: none;
   }
 
   .scrollbar-hidden::-webkit-scrollbar {
@@ -44,7 +48,6 @@
   .section-header {
     writing-mode: vertical-rl;
     direction: rtl;
-    /* text-orientation: upright; */
   }
 }
 

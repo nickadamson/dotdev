@@ -35,6 +35,10 @@
     overscroll-behavior-y: none;
   }
 
+  .no-pointer {
+    pointer-events: none;
+  }
+
   .scrollbar-hidden::-webkit-scrollbar {
     width: 0 !important;
   }

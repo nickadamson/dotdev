@@ -35,8 +35,8 @@ const CameraOverlay = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex fixed z-10 h-screen max-w-unsafe">
+    <div className="overflow-hidden w-full h-full -z-20 no-pointer">
+      <div className="flex fixed h-screen -z-10 max-w-unsafe">
         <img
           className="m-auto w-full h-auto lg:-translate-y-0.5 2xl:-translate-y-1 translate-x-1.5 xl:translate-x-4 2xl:translate-x-6"
           src="/exposure.svg"
@@ -68,7 +68,7 @@ const CameraOverlay = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

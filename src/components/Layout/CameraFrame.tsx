@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import CameraOverlay from "./CameraOverlay";
 import { useAnimation, m, Transition } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 // shoutout https://supercolorpalette.com/
 const colors = ["#f2c1c0", "#ea99b4", "#e273c1", "#d14ddb", "#882acf"];
@@ -13,6 +14,9 @@ const motionVariants = {
 };
 
 const CameraFrame = (): JSX.Element => {
+  const { height, width } = useWindowDimensions();
+  console.log(height);
+
   const control = useAnimation();
   const [ref, inView] = useInView();
 
@@ -63,7 +67,7 @@ const CameraFrame = (): JSX.Element => {
 
       {/* outer */}
       <m.div
-        className="frame-container frame-edge-outline [--b:3px]   [--w:32px]  [--vw:100.1vw] [--vh:100.1vh]"
+        className="frame-container frame-edge-outline [--b:3px]   [--w:32px]  [--vw:100.1vw] [--vh:100.1]"
         style={{ backgroundColor: colors[4] }}
         initial={colorsInitial}
         animate={colorsAnimate}
@@ -72,32 +76,32 @@ const CameraFrame = (): JSX.Element => {
 
       {/* action */}
       <m.div
-        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:88vw]  [--vh:88vh]"
+        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:88vw]  [--vh:88]"
         style={{ backgroundColor: colors[3] }}
         initial={colorsInitial}
         animate={colorsAnimate}
         transition={colorsTransitionWithDelay(0.5)}
       />
-      <div className="frame-container frame-edge-outline [--b:1.5px]   [--w:1rem]  [--vw:88vw]  [--vh:1px]" />
-      <div className="frame-container frame-edge-outline [--b:1.5px]   [--w:1rem]  [--vw:1px]  [--vh:88vh]" />
+      <div className="frame-container frame-edge-outline [--b:1.5px]   [--w:1rem]  [--vw:88vw]  [--vh:0.25]" />
+      <div className="frame-container frame-edge-outline [--b:1.5px]   [--w:1rem]  [--vw:1px]  [--vh:88]" />
 
       {/* title */}
       <m.div
-        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:76vw]  [--vh:76vh]"
+        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:76vw]  [--vh:76]"
         style={{ backgroundColor: colors[2] }}
         initial={colorsInitial}
         animate={colorsAnimate}
         transition={colorsTransitionWithDelay(1)}
       />
       <m.div
-        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:72vw]  [--vh:76vh]"
+        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:72vw]  [--vh:76]"
         style={{ backgroundColor: colors[1] }}
         initial={colorsInitial}
         animate={colorsAnimate}
         transition={colorsTransitionWithDelay(1.5)}
       />
       <m.div
-        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:68vw]  [--vh:76vh]  "
+        className="frame-container frame-edge-outline [--b:1.5px]   [--w:50%]  [--vw:68vw]  [--vh:76]  "
         style={{ backgroundColor: colors[0] }}
         initial={colorsInitial}
         animate={colorsAnimate}

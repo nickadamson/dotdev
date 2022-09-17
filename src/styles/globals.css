@@ -54,10 +54,8 @@
   /* (--y) height; default: 50%; */
   .frame-container {
     position: fixed;
-    /* width: calc(var(--vw) * 1vw); */
     width: var(--vw);
-    height: var(--vh);
-    /* height: calc(var(--vh) * 1vh); */
+    height: calc(var(--vh) * var(--mvh));
 
     top: var(--x);
     left: var(--y);

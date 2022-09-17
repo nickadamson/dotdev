@@ -36,6 +36,10 @@
 
   .no-pointer {
     pointer-events: none;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overscroll-behavior-y: none;
   }
 
   .scrollbar-hidden::-webkit-scrollbar {

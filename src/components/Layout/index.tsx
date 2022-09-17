@@ -11,8 +11,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <NextHead />
-      <div className="w-screen h-screen">
-        <header className="">
+      <div className="overflow-y-hidden fixed w-screen h-screen">
+        <header>
           <Navbar />
         </header>
         {children}

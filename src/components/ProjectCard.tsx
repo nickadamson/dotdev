@@ -65,7 +65,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
               target="_blank"
               className="font-mono font-bold tracking-tighter underline rounded-sm outline-2 hover:outline outline-offset-8"
             >
-              SOURCE
+              REPO
             </a>
           </div>
         </div>

@@ -28,7 +28,7 @@ const projects: Project[] = [
     linkTitle: "DOCS",
     stack: "npm, React",
     description:
-      "messonry is a npm package for React. It creates a 'messy' grid layout for displaying media. While respecting each work's original aspect ratio.",
+      "messonry is a npm package for React. It creates a 'messy' grid layout for displaying media, respecting each work's original aspect ratio.",
   },
   {
     name: "Ourz",
@@ -43,7 +43,7 @@ const projects: Project[] = [
     name: "FFunky Calc",
     github: "https://github.com/nickadamson/ffunky-calc",
     link: "https://nickadamson.github.io/ffunky-calc/",
-    linkTitle: "DEMO",
+    linkTitle: "SITE",
     stack: "JavaScript, Github Pages",
     description: "Four Function Calculator; a favorite from The Odin Project.",
   },

@@ -1,0 +1,67 @@
+
+<svg version="1.1"
+	 id="svg4163" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920px" height="1080px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#666666;}
+	.st1{fill:#BFBFBF;}
+	.st2{fill:#BFBF00;}
+	.st3{fill:#00BFBF;}
+	.st4{fill:#00BF00;}
+	.st5{fill:#BF00BF;}
+	.st6{fill:#BF0000;}
+	.st7{fill:#0000BF;}
+	.st8{fill:#00FFFF;}
+	.st9{fill:#003F69;}
+	.st10{fill:#0000FF;}
+	.st11{fill:#FFFF00;}
+	.st12{fill:#410077;}
+	.st13{fill:url(#rect4240_00000124872297713428260180000006676144504940242612_);}
+	.st14{fill:#FF0000;}
+	.st15{fill:#262626;}
+	.st16{fill:#FFFFFF;}
+	.st17{fill:#050505;}
+	.st18{fill:#0A0A0A;}
+</style>
+<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25098039" id="base" inkscape:current-layer="layer2" inkscape:cx="960" inkscape:cy="540" inkscape:document-units="px" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:showpageshadow="false" inkscape:window-height="1018" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="0.78055556" pagecolor="#ffffff" showborder="true" showgrid="false" units="px">
+	</sodipodi:namedview>
+<g id="layer2" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<rect id="rect3394" width="1920" height="1080"/>
+	<rect id="rect4808" class="st0" width="240" height="630"/>
+	<rect id="rect4811" x="240" class="st1" width="205" height="630"/>
+	<rect id="rect4839" x="445" class="st2" width="206" height="630"/>
+	<rect id="rect4841" x="651" class="st3" width="206" height="630"/>
+	<rect id="rect4843" x="857" class="st4" width="206" height="630"/>
+	<rect id="rect4845" x="1063" class="st5" width="206" height="630"/>
+	<rect id="rect4847" x="1269" class="st6" width="206" height="630"/>
+	<rect id="rect4849" x="1475" class="st7" width="205" height="630"/>
+	<rect id="rect4851" x="1680" class="st0" width="240" height="630"/>
+	<rect id="rect4180" y="630" class="st8" width="240" height="90"/>
+	<rect id="rect4182" x="240" y="630" class="st9" width="205" height="90"/>
+	<rect id="rect4232" x="445" y="630" class="st1" width="1235" height="90"/>
+	<rect id="rect4234" x="1680" y="630" class="st10" width="240" height="90"/>
+	<rect id="rect4236" y="720" class="st11" width="240" height="90"/>
+	<rect id="rect4238" x="240" y="720" class="st12" width="205" height="90"/>
+	
+		<linearGradient id="rect4240_00000078752745385694933880000004285230885311537562_" gradientUnits="userSpaceOnUse" x1="437.331604" y1="16067" x2="1466.7346191" y2="16067" gradientTransform="matrix(1.00058 0 0 1 7.4147592 -15302)">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	
+		<rect id="rect4240" x="445" y="720" style="fill:url(#rect4240_00000078752745385694933880000004285230885311537562_);" width="1030" height="90"/>
+	<rect id="rect4250" x="1680" y="720" class="st14" width="240" height="90"/>
+	<rect id="rect4254" y="810" class="st15" width="240" height="270"/>
+	<rect id="rect4256" x="240" y="810" width="309" height="270"/>
+	<rect id="rect4258" x="549" y="810" class="st16" width="411" height="270"/>
+	<rect id="rect4260" x="960" y="810" width="171" height="270"/>
+	<rect id="rect4262" x="1131" y="810" width="69" height="270"/>
+	<rect id="rect4196" x="1200" y="810" width="68" height="270"/>
+	<rect id="rect4198" x="1268" y="810" class="st17" width="69" height="270"/>
+	<rect id="rect4200" x="1337" y="810" width="68" height="270"/>
+	<rect id="rect4202" x="1405" y="810" class="st18" width="69" height="270"/>
+	<rect id="rect4204" x="1474" y="810" width="206" height="270"/>
+	<rect id="rect4206" x="1680" y="810" class="st15" width="240" height="270"/>
+</g>
+<rect id="rect4250_00000025417549005041931040000018246960240555599293_" x="1475" y="720" class="st16" width="205" height="90"/>
+</svg>

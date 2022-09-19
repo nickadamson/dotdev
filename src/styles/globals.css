@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* colors */
+    --stone-100: rgb(245 245 244);
+    --neutral-100: rgb(245 245 245);
+    --zinc-100: rgb(244 244 245);
+
+    --stone-900: rgb(28 25 23);
+    --neutral-900: rgb(23 23 23);
+    --zinc-900: rgb(24 24 27);
+
+    /* .frame-container */
+    --vw: 101; /* viewport width */
+    --vh: 101; /* viewport height */
+    --x: 50%;
+    --y: 50%;
+
+    /* .frame-edge-outline */
+    --c: var(--zinc-900); /* color of the border */
+    --b: 1px; /* thickness of the border - outside -> inside */
+    --w: 16px; /* width of border - corner edge -> middle of edge */
+  }
+
+  html,
+  body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overscroll-behavior-y: none;
+  }
+
+  .no-pointer {
+    pointer-events: none;
+    overflow-y: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overscroll-behavior-y: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  .scrollbar-hidden {
+    overflow: -moz-scrollbars-none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+  }
+
+  .section-header {
+    writing-mode: vertical-rl;
+    direction: rtl;
+  }
+}
+
+@layer components {
+  /* (--vw) viewport width unit; default: 101; */
+  /* (--vh) viewport height unit; default: 101; */
+  /* (--x) width; default: 50%; */
+  /* (--y) height; default: 50%; */
+  .frame-container {
+    position: fixed;
+    width: var(--vw);
+    height: calc(var(--vh) * var(--mvh));
+
+    top: var(--x);
+    left: var(--y);
+
+    --tw-translate-x: calc(-1 * var(--x));
+    --tw-translate-y: calc(-1 * var(--y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  /* (--c) color of the border; default: black */
+  /* (--b) thickness of the border default: 2px */
+  /* (--w) width of border; default: 16px */
+  .frame-edge-outline {
+    --g: #0000 90deg, var(--c) 0;
+    border: var(--b) solid transparent; /* space for the border */
+    background: conic-gradient(
+          from 90deg at top var(--b) left var(--b),
+          var(--g)
+        )
+        0 0,
+      conic-gradient(from 180deg at top var(--b) right var(--b), var(--g)) 100%
+        0,
+      conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--g)) 0
+        100%,
+      conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--g))
+        100% 100%;
+    background-size: var(--w) var(--w);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+
+  /* Real outline for modern browsers */
+  @supports ((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+    .outline-font {
+      color: white;
+      -webkit-text-stroke: 2px black;
+      text-stroke: 2px black;
+      text-shadow: none;
+    }
+  }
+}

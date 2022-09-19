@@ -7,22 +7,7 @@ import { Project } from "./sections/Projects";
 interface ProjectCardProps {
   project: Project;
   index: number;
-  // setActive?: Dispatch<SetStateAction<string>>;
 }
-
-const motionVariants = (index: number) => {
-  return {
-    visible: {
-      transform: "translate(0vw)",
-      // opacity: 1,
-      transition: { duration: 1 },
-    },
-    hidden: {
-      transform: index % 2 === 1 ? "translate(-100vw)" : "translate(100vw)",
-      // opacity: 0,
-    },
-  };
-};
 
 const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
   const { name, github, link, linkTitle, stack, description } = project;
@@ -40,9 +25,6 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
 
   return (
     <div
-      // variants={motionVariants(index)}
-      // initial="visible"
-      // animate={control}
       className={`flex ${
         index % 2 === 1 ? "flex-row-reverse" : ""
       } portrait:flex-col-reverse portrait:justify-around mx-auto rounded-xl border-2 border-black w-card lg:h-card portrait:h-card-mobile max-w-8xl`}

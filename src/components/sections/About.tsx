@@ -51,7 +51,6 @@ const About = () => {
           className="p-1 ml-0 space-y-6 lg:my-auto lg:w-3/5 md:p-8 lg:text-xl"
         >
           <p>
-            {/* Hi there, I&apos;m */}
             I&apos;m a Full-Stack Engineer with a passion for open-source
             software. I love creating striking experiences, building useful
             tools, and bringing ideas to reality.

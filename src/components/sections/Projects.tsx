@@ -1,5 +1,3 @@
-import { useAnimation, m } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import ProjectCard from "../ProjectCard";
 
 export interface Project {
@@ -56,7 +54,6 @@ const Projects = () => {
     <section id="projects">
       <div className="flex flex-col">
         <div className="relative top-0 mx-auto text-5xl font-black lg:text-8xl -z-10">
-          {/* <h2 className="top-0 -mx-6 -mb-6 ml-6 outline-font">Projects</h2> */}
           {styleRepeater.map((style, index) => {
             return index === 0 ? (
               <h2

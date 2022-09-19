@@ -19,7 +19,7 @@ const projects: Project[] = [
     linkTitle: "SITE",
     stack: "Solidity, TypeScript, NextJS, TheGraph",
     description:
-      "Loudverse is a 2 sided marketplace for funding hard to quantify public goods, like music, poetry, and theater. Smart contracts are deployed on Polygon.",
+      "Loudverse is a 2 sided marketplace for funding hard to quantify public goods, like music, poetry, and theater. Smart contracts are deployed on Polygon. Placed top 5 at ETH Denver Hackathon. #web3",
   },
   {
     name: "Messonry",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     linkTitle: "SITE",
     stack: "Solidity, TypeScript, NextJS, TheGraph",
     description:
-      "ourz.network is a platform that enables creators, builders, and collaborators of all kind, to receive split royalties for their work. Forever. Smart contracts are deployed on Ethereum Mainnet, built on top of Zora Protocol.",
+      "ourz.network is a platform that enables creators, builders, and collaborators of all kind, to receive split royalties for their work. Forever. Smart contracts are deployed on Ethereum Mainnet, built on top of Zora Protocol. #web3",
   },
   {
     name: "FFunky Calc",

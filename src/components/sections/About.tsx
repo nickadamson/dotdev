@@ -56,7 +56,7 @@ const About = () => {
             tools, and bringing ideas to reality.
           </p>
           <p>
-            Previously, I was a freelance Digital Imaging Technician for 7
+            Previously, I was a freelance Digital Imaging Technician for over 5
             years. I assisted fashion and make-up brands in producing beautiful
             content. The resourcefulness and eye for design I developed is
             especially useful in my programming work now.
@@ -71,7 +71,16 @@ const About = () => {
             >
               on github
             </a>
-            , follow me{" "}
+            , add me{" "}
+            <a
+              href={"https://www.linkedin.com/in/nick-adamson/"}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="underline"
+            >
+              on linkedin
+            </a>
+            {/* , follow me{" "}
             <a
               href={"https://twitter.com/nickadams0n"}
               rel="noopener noreferrer"
@@ -79,7 +88,7 @@ const About = () => {
               className="underline"
             >
               on twitter
-            </a>
+            </a> */}
             , or reach out{" "}
             <a
               href={"mailto:nickadamson@pm.me"}

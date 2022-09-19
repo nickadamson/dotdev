@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */ // should not use SVG's with next/image
 import { useState, useEffect } from "react";
 
 const CameraOverlay = () => {
@@ -32,6 +33,7 @@ const CameraOverlay = () => {
 
   useEffect(() => {
     startRecording();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -31,7 +31,12 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, index }) => {
     >
       <div className="m-4 max-w-full max-h-full portrait:h-1/2 landscape:w-1/2">
         <div className="relative w-full h-full">
-          <Image src={`/${name}.png`} layout="fill" objectFit="cover" />
+          <Image
+            src={`/${name}.png`}
+            layout="fill"
+            objectFit="cover"
+            alt={`Preview image of ${name}.`}
+          />
         </div>
       </div>
       <div className="flex flex-col justify-around px-6 landscape:py-4 portrait:py-2 landscape:w-1/2 landscape:h-full">

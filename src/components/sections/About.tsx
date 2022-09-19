@@ -24,7 +24,7 @@ const About = () => {
     if (inView) {
       control.start("visible");
     } else {
-      control.start("hidden");
+      // only animate in
     }
   }, [control, inView]);
 
@@ -32,7 +32,7 @@ const About = () => {
     <section id="about">
       <div
         ref={ref}
-        className="flex flex-col px-2 py-24 w-full lg:flex-row h-center-action portrait:mb-16"
+        className="flex flex-col px-2 py-24 w-full lg:flex-row h-center-action"
       >
         <m.div
           variants={headerVariants}

@@ -41,7 +41,7 @@ module.exports = {
         "88vh": "calc(0.5 * var(--mvh))",
       },
       margin: {
-        "88vh": "calc(7 * var(--mvh))",
+        "88vh": "calc(6.5 * var(--mvh))",
         "88vw": "7vw",
         "76vh": "calc(24 * var(--mvh))",
         "76vw": "24vw",

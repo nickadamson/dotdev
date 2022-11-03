@@ -40,7 +40,7 @@ const CameraOverlay = () => {
     <div className="overflow-y-hidden fixed top-0 w-full h-full -z-10 no-pointer">
       <div className="flex fixed h-screen max-w-unsafe">
         <img
-          className="m-auto w-full h-auto lg:-translate-y-0.5 2xl:-translate-y-1 translate-x-1.5 xl:translate-x-4 2xl:translate-x-6"
+          className="m-auto w-full h-auto lg:-translate-y-0.5 2xl:-translate-y-1 translate-x-1.5 xl:translate-x-3 2xl:translate-x-6"
           src="/exposure.svg"
           alt="Camera Auto Exposure Slider Icon"
         />
@@ -50,7 +50,7 @@ const CameraOverlay = () => {
           <div className="flex space-x-8 mt-88vh ml-88vw">
             {/* <img src="/flash.svg" alt="Camera Flash Icon" /> */}
             <img
-              className="m-auto 2xl:h-14 xl:h-12 lg:h-10 md:h-8"
+              className="m-auto h-6 md:h-7 lg:h-10"
               src="/camera.svg"
               alt="Video Camera Icon"
             />

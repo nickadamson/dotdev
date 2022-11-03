@@ -1,7 +1,12 @@
 import { FC, ReactNode } from "react";
 import Navbar from "./Navbar";
 import NextHead from "./NextHead";
-import CameraFrame from "./CameraFrame";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const DynamicFrame = dynamic(() => import("./CameraFrame"), {
+  suspense: true,
+});
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,7 +21,9 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           <Navbar />
         </header>
         {children}
-        <CameraFrame />
+        <Suspense fallback={"Loading..."}>
+          <DynamicFrame />
+        </Suspense>
       </div>
     </>
   );

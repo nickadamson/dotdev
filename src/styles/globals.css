@@ -23,6 +23,8 @@
     --c: var(--zinc-900); /* color of the border */
     --b: 1px; /* thickness of the border - outside -> inside */
     --w: 16px; /* width of border - corner edge -> middle of edge */
+
+    --mvh: 1080px;
   }
 
   html,

@@ -1,4 +1,4 @@
-import { useAnimation, m } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { FC, useEffect } from "react";

@@ -1,4 +1,5 @@
 import { useAnimation, m } from "framer-motion";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -18,14 +19,15 @@ const bodyVariants = {
 const Landing = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
+  const pathIncludesPage = useRouter()?.asPath?.includes("#");
 
   useEffect(() => {
-    if (inView) {
+    if (inView || pathIncludesPage) {
       control.start("visible");
     } else {
       control.start("hidden");
     }
-  }, [control, inView]);
+  }, [control, inView, pathIncludesPage]);
 
   return (
     <section id="home" className="max-w-full">

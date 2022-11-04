@@ -10,7 +10,7 @@ const CameraFrame = (): JSX.Element => {
   useWindowDimensions();
 
   // random colors on every load
-  const initialDegrees = Math.floor(Math.random() * 360);
+  const initialDegrees = 75;
   const endDegrees = initialDegrees + 360;
   const colorsInitial = {
     filter: `hue-rotate(${initialDegrees}deg)`,
